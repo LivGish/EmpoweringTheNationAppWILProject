@@ -35,11 +35,11 @@ const LifeSkillsScreen = ({ setCurrentScreen, previousScreen, goBack }: LifeSkil
            style={styles.background}
            resizeMode="cover"
     >
-
-    <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
-        <Text style={styles.backButtonText}>← Return to previous screen</Text>
-    </TouchableOpacity>    <SafeAreaView style={styles.safeArea}>
-    <ScrollView contentContainerStyle={styles.scrollContent}> 
+    <SafeAreaView style={styles.safeArea}>
+        <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
+            <Text style={styles.backButtonText}>← Return to previous screen</Text>
+        </TouchableOpacity>
+        <ScrollView contentContainerStyle={styles.scrollContent}> 
              <Text style={styles.title}>Life skills</Text>
 
             <Image

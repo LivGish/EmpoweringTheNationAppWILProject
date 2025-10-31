@@ -114,7 +114,7 @@ const FeeCalculator: React.FC<FeeCalculatorScreenProps> = ({ setCurrentScreen, p
                 {/* Contact form */}
                 <View style={styles.formRow}>
                     <TextInput
-                        placeholder="Name"
+                        placeholder="Full name"
                         value={name}
                         onChangeText={setName}
                         style={styles.inputHalf}
@@ -163,7 +163,7 @@ const FeeCalculator: React.FC<FeeCalculatorScreenProps> = ({ setCurrentScreen, p
                 {/* Course Selection */}
                 <View style={styles.courseRow}>
                     <View style={styles.courseColumn}>
-                        <Text style={styles.columnTitle}>6-month courses (R1500):</Text>
+                        <Text style={styles.columnTitle}>6-month courses (R1500 per course):</Text>
                         {(Object.keys(courses) as CourseKey[])
                             .slice(0, 4)
                             .map((course) => (
@@ -181,7 +181,7 @@ const FeeCalculator: React.FC<FeeCalculatorScreenProps> = ({ setCurrentScreen, p
                     </View>
 
                     <View style={styles.courseColumn}>
-                        <Text style={styles.columnTitle}>6-week courses (R750):</Text>
+                        <Text style={styles.columnTitle}>6-week courses (R750 per course):</Text>
                         {(Object.keys(courses) as CourseKey[])
                             .slice(4)
                             .map((course) => (
@@ -211,6 +211,12 @@ const FeeCalculator: React.FC<FeeCalculatorScreenProps> = ({ setCurrentScreen, p
                             Fee Calculation Summary
                         </Text>
                         <Text style={styles.resultText}>
+                            <Text style={{ fontWeight: "bold" }}>Customer details:</Text>
+                            {"\n"}
+                            <Text style={{ fontWeight: "bold" }}>Name:</Text> {name}{"\n"}
+                            <Text style={{ fontWeight: "bold" }}>Cell Number:</Text> {cellNumber}{"\n"}
+                            <Text style={{ fontWeight: "bold" }}>Email:</Text> {email}{"\n\n"}
+
                             <Text style={{ fontWeight: "bold" }}>Selected courses:</Text>
                             {"\n"}
                             {selectedCourses.map(course => `• ${course} - R${courses[course]}`).join("\n")}
@@ -219,7 +225,7 @@ const FeeCalculator: React.FC<FeeCalculatorScreenProps> = ({ setCurrentScreen, p
                             {"\n"}
                             {total.discountRate > 0 && (
                                 <>
-                                    <Text style={{ fontWeight: "bold" }}>Discount amount ({total.discountRate}%): -R{total.discountAmount.toFixed(2)}</Text>
+                                    <Text style={{ fontWeight: "bold" }}>Discount amount ({total.discountRate}%): R{total.discountAmount.toFixed(2)}</Text>
                                     {"\n"}
                                     <Text style={{ fontWeight: "bold" }}>Amount including discount: R{total.discountedTotal.toFixed(2)}</Text>
                                     {"\n"}
@@ -232,8 +238,6 @@ const FeeCalculator: React.FC<FeeCalculatorScreenProps> = ({ setCurrentScreen, p
                                 </>
                             )}
                             <Text style={{ fontWeight: "bold" }}>Total before VAT: R{total.discountedTotal.toFixed(2)}</Text>
-                            {"\n"}
-                            <Text style={{ fontWeight: "bold" }}>VAT (15%): +R{total.vatAmount.toFixed(2)}</Text>
                             {"\n"}
                             <Text style={{ fontWeight: "bold", fontSize: 16 }}>
                                 Total after VAT: R{total.finalTotal.toFixed(2)}

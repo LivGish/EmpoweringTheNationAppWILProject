@@ -42,11 +42,11 @@ const GardenMaintenanceScreen: React.FC<GardenMaintenanceScreenProps> = ({ setCu
             style={styles.background}
             resizeMode="cover"
       >
-
-        <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
-            <Text style={styles.backButtonText}>← Return to previous screen</Text>
-        </TouchableOpacity>   <SafeAreaView style={styles.safeArea}>
-        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <SafeAreaView style={styles.safeArea}>
+            <TouchableOpacity style={styles.backButton} onPress={handleGoBack}>
+                <Text style={styles.backButtonText}>← Return to previous screen</Text>
+            </TouchableOpacity>
+            <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
             <View style={styles.titleContainer}>
                 <Text style={styles.title}>Garden Maintenance</Text>
             </View>
