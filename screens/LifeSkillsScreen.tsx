@@ -56,8 +56,7 @@ const LifeSkillsScreen = ({ setCurrentScreen, previousScreen, goBack }: LifeSkil
           <Text style={styles.sectionTitle}>Course details:</Text>
           <View style={styles.bulletList}>
             <Text style={styles.bulletPoint}>- Six-month extensive course</Text>
-            <Text style={styles.bulletPoint}>- Can be completed online or in-person 
-              (see contact page for in-person locations)</Text>
+            <Text style={styles.bulletPoint}>- Can be completed online or in-person (see contact page for in-person locations)</Text>
           </View>
         </View>
 

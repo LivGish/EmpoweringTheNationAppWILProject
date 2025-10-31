@@ -40,6 +40,11 @@ export default function NavigationApp() {
     const [sidebarVisible, setSidebarVisible] = useState(false);
     const slideAnim = useRef(new Animated.Value(-width * 0.8)).current;
 
+    // Preload images on app start for faster loading
+    // useEffect(() => {
+    //     preloadImages().catch(console.error);
+    // }, []);
+
     const navigateToScreen = (newScreen: ScreenType) => {
         console.log('Navigating from', currentScreen, 'to', newScreen);
         setPreviousScreen(currentScreen);

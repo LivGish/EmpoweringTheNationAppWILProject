@@ -66,8 +66,7 @@ const GardenMaintenanceScreen: React.FC<GardenMaintenanceScreenProps> = ({ setCu
               <Text style={styles.sectionTitle}>Course details:</Text>
               <View style={styles.bulletList}>
                 <Text style={styles.bulletPoint}>- Six-week short course</Text>
-                <Text style={styles.bulletPoint}>- Can be completed online or in-person 
-                  (see contact page for in-person locations)</Text>
+                <Text style={styles.bulletPoint}>- Can be completed online or in-person (see contact page for in-person locations)</Text>
               </View>
             </View>
  
@@ -75,10 +74,9 @@ const GardenMaintenanceScreen: React.FC<GardenMaintenanceScreenProps> = ({ setCu
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Course content:</Text>
             <View style={styles.bulletList}>
-              <Text style={styles.bulletPoint}>- Water restrictions and water requirements of indigenous
-                and exotic plants</Text>
-              <Text style={styles.bulletPoint}>- Pruning and propagation of plants </Text>
-              <Text style={styles.bulletPoint}>- Planting techniques for different plans</Text>
+              <Text style={styles.bulletPoint}>- Water restrictions and water requirements of indigenous and exotic plants</Text>
+              <Text style={styles.bulletPoint}>- Pruning and propagation of plants</Text>
+              <Text style={styles.bulletPoint}>- Planting techniques for different plants</Text>
             </View>
           </View>
  
