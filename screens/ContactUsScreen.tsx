@@ -1,3 +1,18 @@
+/*CODE ATTRIBUTION*/
+/*TITLE: IIE MAST5112 Module Manual 2025*/
+/*AUTHOR: The Independent Institute of Education (Pty) Ltd*/
+/*DATE: 07/03/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BC4AAF478-96AC-4469-8005-F7CDC4A15EBB%7D&file=MAST5112MM.docx&action=default&mobileredirect=true*/
+
+/*CODE ATTRIBUTION*/
+/*TITLE: TypeScript and Google Maps*/
+/*AUTHOR: Google Maps Platform*/
+/*DATE: 11/06/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://developers.google.com/maps/documentation/javascript/using-typescript*/
+
+
 import React from "react";
 import { StyleSheet, Text, ScrollView, TouchableOpacity, View, ImageBackground, Linking } from "react-native";
 import { WebView } from "react-native-webview";

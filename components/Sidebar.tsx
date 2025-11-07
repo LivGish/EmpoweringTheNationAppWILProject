@@ -1,3 +1,18 @@
+/*CODE ATTRIBUTION*/
+/*TITLE: Simple hamburger button in react-typescript and tailwind CSS*/
+/*AUTHOR: DEV*/
+/*DATE: 17/05/2023*/
+/*VERSION: 2.0*/
+/*AVAILABLE: https://dev.to/asqit/hamburger-in-react-tw-ts-4i0h*/
+
+/*CODE ATTRIBUTION*/
+/*TITLE: IIE MAST5112 Module Manual 2025*/
+/*AUTHOR: The Independent Institute of Education (Pty) Ltd*/
+/*DATE: 07/03/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BC4AAF478-96AC-4469-8005-F7CDC4A15EBB%7D&file=MAST5112MM.docx&action=default&mobileredirect=true*/
+
+
 import React from "react";
 import { 
   StyleSheet, 
@@ -165,8 +180,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: width * 0.4, // 40% of screen width
-    height: '100%',
+    width: width * 0.6, // 40% of screen width
+    height: '120%',
     backgroundColor: '#ffffff',
     zIndex: 1000,
     elevation: 16,
