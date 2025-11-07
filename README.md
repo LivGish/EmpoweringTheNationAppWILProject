@@ -5,3 +5,5 @@ References
 [online] Available at: https://developers.google.com/maps/documentation/javascript/using-typescript [Accessed 11 June 2025].
 
 - The Independent Institute of Education (Pty) Ltd. (2025) IIE MAST5112 Module Manual 2025. [online] Available at: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BC4AAF478-96AC-4469-8005-F7CDC4A15EBB%7D&file=MAST5112MM.docx&action=default&mobileredirect=true [Accessed 7 March 2025].
+
+First haf of code completed by group member Minenhle Dumisa. Original GitHub repository: https://github.com/ST10478498-MinenhleDumisa/EmpoweringTheNationAppWILProject 
